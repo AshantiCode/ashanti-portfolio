@@ -71,11 +71,20 @@
 
 // Smartphones
 @include mediaSm {
+
+    body {
+        &#bg-image {
+            background: url(../img/sunset2-long.jpg) no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    }
+
     main {
         padding: 2rem;
 
         #home h1 {
-            margin-top: 10vh;
+            margin-top: 8vh;
         }
 
         .lg-heading {
