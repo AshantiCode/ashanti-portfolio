@@ -269,6 +269,12 @@ main {
   .btn-light {
     background: #a5a5a5; }
 
+.impressum {
+  position: absolute;
+  bottom: 2%;
+  right: 3%;
+  font-size: 12px; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
