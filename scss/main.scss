@@ -252,6 +252,14 @@ main {
     font-size: 12px;
 }
 
+// Impresseum Page
+#impressum-page {
+    margin: 2rem;
+
+    .heading {
+        color: $secondary-color;
+    }
+}
 
 //  Sticky Footer , calc function on main
 #main-footer {

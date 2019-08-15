@@ -275,6 +275,11 @@ main {
   right: 3%;
   font-size: 12px; }
 
+#impressum-page {
+  margin: 2rem; }
+  #impressum-page .heading {
+    color: #FFC040; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
@@ -315,7 +320,7 @@ main {
     .menu-branding .portrait {
       width: 150px;
       height: 150px;
-      background: url(../img/profile-pic-320.jpg);
+      background: url(../img/profile-pic-320.JPG);
       background-size: contain; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'col1' 'col2' 'col3';
