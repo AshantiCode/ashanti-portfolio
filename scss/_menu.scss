@@ -87,6 +87,13 @@
             transform: translate3d(0, 0, 0);
         }
 
+        .greeting {
+            font-size: 1.875rem;
+            margin: 0 0 4rem;
+            color: $secondary-color;
+            text-transform: uppercase;
+        }
+
         .portrait {
             width: 250px;
             height: 250px;
@@ -94,8 +101,6 @@
             background-size: contain;
             border-radius: 50%;
             border: 3px solid $secondary-color;
-
-
         }
     }
 
@@ -116,7 +121,7 @@
     .nav-link {
         display: inline-block;
         position: relative;
-        font-size: 30px;
+        font-size: 1.875rem;
         text-transform: uppercase;
         padding: 1rem 0;
         font-weight: 300;
