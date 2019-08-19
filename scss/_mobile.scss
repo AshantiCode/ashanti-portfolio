@@ -110,6 +110,14 @@
         }
     }
 
+    #projects {
+        .project-info {
+            letter-spacing: normal;
+            margin: .2rem .2rem 0 0;
+            text-align: left;
+        }
+    }
+
     footer {
         &#main-footer {
             height: 80px;
@@ -131,11 +139,7 @@
             .copyright {
                 font-size: 14px;
             }
-
-
-
         }
-
     }
 
 
