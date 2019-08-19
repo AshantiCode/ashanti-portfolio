@@ -322,8 +322,11 @@ main {
     align-items: center;
     text-align: center; }
     main .lg-heading {
+      font-size: 4rem;
       line-height: 1;
       margin-bottom: 1rem; }
+    main .sm-heading {
+      font-size: 1.2rem; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
