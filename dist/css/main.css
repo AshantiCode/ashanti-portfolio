@@ -241,6 +241,14 @@ main {
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       text-align: center; }
+  .projects .project-info {
+    border: 1px solid #FFC040;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 1rem .3rem 0 0;
+    padding: .3rem 1rem;
+    font-size: .9rem;
+    letter-spacing: 1px; }
 
 .boxes {
   display: flex;
@@ -261,15 +269,6 @@ main {
       color: #000; }
       .boxes div:hover span {
         color: #000; }
-
-.project-info {
-  border: 1px solid #FFC040;
-  border-radius: 20px;
-  display: inline-block;
-  margin: 1rem .3rem 0 0;
-  padding: .3rem 1rem;
-  font-size: .9rem;
-  letter-spacing: 1px; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -340,6 +339,8 @@ main {
   .menu-branding {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
+    .menu-branding .greeting {
+      display: none; }
     .menu-branding .portrait {
       width: 150px;
       height: 150px;
@@ -349,7 +350,9 @@ main {
     grid-template-areas: 'bioimage' 'bio' 'col1' 'col2' 'col3';
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+    .projects .item {
+      margin-bottom: 2rem; } }
 
 @media screen and (max-width: 500px) {
   body#bg-image {
@@ -373,7 +376,10 @@ main {
       display: flex;
       justify-content: space-evenly; }
       footer#main-footer .icons .fa-2x {
-        font-size: 1rem; }
+        font-size: 1.25rem; }
+    footer#main-footer .impressum,
+    footer#main-footer .copyright {
+      font-size: 14px; }
   .projects {
     grid-template-columns: 1fr; }
   #contact .boxes div {

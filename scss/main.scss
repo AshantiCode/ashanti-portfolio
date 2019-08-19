@@ -61,20 +61,7 @@ main {
     // calc to create a sticky footer
     min-height: calc(100vh - 60px);
 
-    // .icons {
-    //     margin-top: 1rem;
 
-    //     a {
-    //         padding: 1rem;
-
-
-
-    //         &:hover {
-    //             color: $secondary-color;
-    //             @include easeOut;
-    //         }
-    //     }
-    // }
 
     &#home {
         overflow: hidden;
@@ -205,6 +192,16 @@ main {
             text-align: center;
         }
     }
+
+    .project-info {
+        border: 1px solid $secondary-color;
+        border-radius: 20px;
+        display: inline-block;
+        margin: 1rem .3rem 0 0;
+        padding: .3rem 1rem;
+        font-size: .9rem;
+        letter-spacing: 1px;
+    }
 }
 
 // Contact Page
@@ -237,15 +234,7 @@ main {
 }
 
 // Project Info Styles
-.project-info {
-    border: 1px solid $secondary-color;
-    border-radius: 20px;
-    display: inline-block;
-    margin: 1rem .3rem 0 0;
-    padding: .3rem 1rem;
-    font-size: .9rem;
-    letter-spacing: 1px;
-}
+
 
 
 // Button Styles
