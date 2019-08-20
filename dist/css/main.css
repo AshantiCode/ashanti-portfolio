@@ -5,7 +5,9 @@
   right: 35px;
   top: 35px;
   cursor: pointer;
-  transition: all .4s ease-out; }
+  transition: all .4s ease-out;
+  padding: 7px 7px 2px;
+  border: 2px solid #FFC040; }
   .menu-btn .btn-line {
     width: 28px;
     height: 3px;

@@ -7,6 +7,9 @@
     top: 35px;
     cursor: pointer;
     @include easeOut;
+    padding: 7px 7px 2px;
+    border: 2px solid $secondary-color;
+
 
     .btn-line {
         width: 28px;
@@ -14,7 +17,10 @@
         margin: 0 0 5px 0;
         background: set-text-color($primary-color);
         @include easeOut;
+
     }
+
+
 
     // Rotate Menu into X With The Lines
     &.close {
