@@ -7,8 +7,9 @@ $secondary-color: #FFC040;
 $heading-font: 'Emilys Candy',
 cursive;
 $show-home-image: true;
-$home-image: url(../img/sunset2.jpg);
-$background-opacity: .4;
+// $home-image: url(../img/sunset2.jpg);
+$home-image: url(../img/sunrise.jpg);
+$background-opacity: .5;
 
 @mixin easeOut {
     transition: all .4s ease-out;
@@ -28,7 +29,8 @@ $background-opacity: .4;
                 right: 0;
                 width: 100%;
                 height: 100%;
-                background: rgba($primary-color, $background-opacity);
+                // background: rgba($primary-color, $background-opacity);
+                background: rgba(0, 0, 0, $background-opacity);
                 z-index: -1;
             }
         }
