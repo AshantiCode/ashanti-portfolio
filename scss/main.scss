@@ -100,6 +100,8 @@ main {
             // font-weight: 700;
             background: $secondary-color;
             color: #4a4646;
+            text-transform: uppercase;
+            font-weight: bold;
             // border: 2px solid $secondary-color;
             border-radius: 4px;
             transition: all 0.4s ease-in-out;
@@ -259,7 +261,7 @@ main {
     }
 }
 
-// Project Info Styles
+
 
 // Button Styles
 .btn {
@@ -325,13 +327,13 @@ main {
     }
 
     .icons {
-        // .fa-2x {
-        //     font-size: 1.5rem;
-        // }
+        .fa-2x {
+            font-size: 1.5rem;
+        }
 
-        // a {
-        //     padding-right: 1.4rem;
-        // }
+        a {
+            padding-right: 1.4rem;
+        }
     }
 }
 
