@@ -368,7 +368,7 @@ main {
     padding-right: 1.4rem; }
 
 @media screen and (min-width: 1171px) {
-  .main {
+  main {
     max-width: 1200px;
     margin: 0 auto; } }
 
