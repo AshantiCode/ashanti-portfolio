@@ -343,9 +343,9 @@ main {
   .btn-light {
     background: #a5a5a5; }
 
-#impressum-page {
+.content {
   margin: 2rem; }
-  #impressum-page .heading {
+  .content .heading {
     color: #FFC040; }
 
 #main-footer {
@@ -401,7 +401,8 @@ main {
   .menu-branding {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
-    .menu-branding .greeting {
+    .menu-branding .greeting,
+    .menu-branding .name {
       display: none; }
     .menu-branding .portrait {
       width: 150px;
@@ -425,10 +426,15 @@ main {
     padding: 2rem;
     min-height: calc(100vh - 80px); }
     main#home h1 {
-      margin-top: 8vh;
-      font-size: 5rem; }
+      margin-top: 10vh;
+      font-size: 4rem; }
     main#home .more-btn {
       margin-top: 0; }
+    main#home .icons {
+      position: relative;
+      bottom: -9rem; }
+  .menu-btn {
+    border: none; }
   #projects .project-info {
     letter-spacing: normal;
     margin: 0.2rem 0.2rem 0 0;

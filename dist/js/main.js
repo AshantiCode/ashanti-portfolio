@@ -11,8 +11,6 @@ const moreBtn = document.querySelector('#more-btn')
 // Here set inital state of menu
 let showMenu = false;
 
-// moreBtn.addEventListener('click', toggleMenu),
-//     menuBtn.addEventListener('click', toggleMenu);
 
 [menuBtn, moreBtn].forEach(item => {
     item.addEventListener('click', toggleMenu)
