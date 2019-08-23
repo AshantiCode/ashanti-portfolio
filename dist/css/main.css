@@ -164,6 +164,14 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
+    main#home .icons .fa-2x {
+      font-size: 1.5rem; }
+    main#home .icons a {
+      padding-right: 1.4rem;
+      color: #c5c4c1; }
+      main#home .icons a:hover {
+        color: #FFC040;
+        transition: all .4s ease-out; }
     main#home .btn-reset {
       padding: 0;
       border: none;
@@ -175,12 +183,14 @@ main {
       margin-top: 4rem;
       padding: 0.5rem 2rem;
       font-size: 1.25rem;
-      border: 2px solid #FFC040;
+      background: #FFC040;
+      color: #4a4646;
       border-radius: 4px;
       transition: all 0.4s ease-in-out; }
       main#home .more-btn:hover {
-        background: #FFC040;
-        color: black; }
+        background: #252525;
+        opacity: .7;
+        color: white; }
 
 .about-info {
   display: grid;
@@ -350,10 +360,6 @@ main {
   #main-footer a,
   #main-footer div {
     color: grey; }
-  #main-footer .icons .fa-2x {
-    font-size: 1.5rem; }
-  #main-footer .icons a {
-    padding-right: 1.4rem; }
 
 @media screen and (min-width: 1171px) {
   .main {

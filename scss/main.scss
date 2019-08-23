@@ -65,6 +65,25 @@ main {
             margin-top: 20vh;
         }
 
+
+
+        .icons {
+            .fa-2x {
+                font-size: 1.5rem;
+            }
+
+            a {
+                padding-right: 1.4rem;
+                color: #c5c4c1;
+
+                &:hover {
+                    color: $secondary-color;
+                    @include easeOut;
+                }
+            }
+
+        }
+
         .btn-reset {
             padding: 0;
             border: none;
@@ -79,16 +98,20 @@ main {
             padding: 0.5rem 2rem;
             font-size: 1.25rem;
             // font-weight: 700;
-            border: 2px solid $secondary-color;
+            background: $secondary-color;
+            color: #4a4646;
+            // border: 2px solid $secondary-color;
             border-radius: 4px;
             transition: all 0.4s ease-in-out;
 
             &:hover {
-                background: $secondary-color;
-                // font-weight: 700;
-                color: black;
+                background: $primary-color;
+                opacity: .7; // font-weight: 700;
+                color: white;
             }
         }
+
+
     }
 }
 
@@ -302,13 +325,13 @@ main {
     }
 
     .icons {
-        .fa-2x {
-            font-size: 1.5rem;
-        }
+        // .fa-2x {
+        //     font-size: 1.5rem;
+        // }
 
-        a {
-            padding-right: 1.4rem;
-        }
+        // a {
+        //     padding-right: 1.4rem;
+        // }
     }
 }
 
