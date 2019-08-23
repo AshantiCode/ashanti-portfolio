@@ -78,7 +78,8 @@ $background-opacity: .5;
 
 @mixin ribbon {
     .ribbon {
-        width: 150px;
+        // width: 150px;
+        width: 133px;
         height: 150px;
         overflow: hidden;
         position: absolute;
@@ -90,15 +91,16 @@ $background-opacity: .5;
         z-index: -1;
         content: '';
         display: block;
-        border: 5px solid #2980b9;
+        // border: 5px solid #2980b9;
     }
 
     .ribbon span {
         position: absolute;
         display: block;
         width: 225px;
-        padding: 15px 0;
-        background-color: $secondary-color;
+        font-size: 10px;
+        padding: 10px 0;
+        background-color: rgba($secondary-color, .7);
         box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
         color: $primary-color;
         // font: 700 18px/1 'Lato', sans-serif;
@@ -108,8 +110,10 @@ $background-opacity: .5;
     }
 
     .ribbon-top-right {
-        top: -10px;
-        right: -10px;
+        // top: -10px;
+        // right: -10px;
+        top: -2px;
+        right: -3px;
     }
 
     .ribbon-top-right::before,
