@@ -8,7 +8,7 @@
     cursor: pointer;
     @include easeOut;
     // padding: 7px 7px 2px;
-    border: 2px solid $secondary-color;
+    border: 5px solid $secondary-color;
     border-radius: 50%;
 
     padding: 15px 15px 10px;
@@ -96,11 +96,16 @@
             transform: translate3d(0, 0, 0);
         }
 
-        .greeting {
+        .greeting,
+        .name {
             font-size: 1.875rem;
-            margin: 0 0 4rem;
+            // margin: 0 0 4rem;
             color: $secondary-color;
             text-transform: uppercase;
+        }
+
+        .name {
+            letter-spacing: 4px;
         }
 
         .portrait {
@@ -111,6 +116,8 @@
             border-radius: 50%;
             border: 3px solid $secondary-color;
         }
+
+
     }
 
     .nav-item {

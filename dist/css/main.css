@@ -6,7 +6,7 @@
   top: 35px;
   cursor: pointer;
   transition: all .4s ease-out;
-  border: 2px solid #FFC040;
+  border: 5px solid #FFC040;
   border-radius: 50%;
   padding: 15px 15px 10px; }
   .menu-btn .btn-line {
@@ -55,11 +55,13 @@
     transition: all .4s ease-out; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
-    .menu-branding .greeting {
+    .menu-branding .greeting,
+    .menu-branding .name {
       font-size: 1.875rem;
-      margin: 0 0 4rem;
       color: #FFC040;
       text-transform: uppercase; }
+    .menu-branding .name {
+      letter-spacing: 4px; }
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
@@ -157,8 +159,7 @@ header {
 
 main {
   padding: 4rem;
-  min-height: calc(100vh - 60px);
-  max-width: 1200px; }
+  min-height: calc(100vh - 60px); }
   main#home {
     overflow: hidden; }
     main#home h1 {
@@ -213,9 +214,50 @@ main {
   display: grid;
   grid-gap: 0.8rem;
   grid-template-columns: repeat(3, 1fr); }
-  .projects img {
-    width: 100%;
-    border: 3px solid #fff; }
+  .projects .item {
+    margin-bottom: 2.3rem; }
+    .projects .item img {
+      width: 100%;
+      border: 3px solid #fff; }
+    .projects .item .ribbon {
+      width: 150px;
+      height: 150px;
+      overflow: hidden;
+      position: absolute; }
+    .projects .item .ribbon::before,
+    .projects .item .ribbon::after {
+      position: absolute;
+      z-index: -1;
+      content: '';
+      display: block;
+      border: 5px solid #2980b9; }
+    .projects .item .ribbon span {
+      position: absolute;
+      display: block;
+      width: 225px;
+      padding: 15px 0;
+      background-color: #FFC040;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      color: #252525;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+      text-align: center; }
+    .projects .item .ribbon-top-right {
+      top: -10px;
+      right: -10px; }
+    .projects .item .ribbon-top-right::before,
+    .projects .item .ribbon-top-right::after {
+      border-top-color: transparent;
+      border-right-color: transparent; }
+    .projects .item .ribbon-top-right::before {
+      top: 0;
+      left: 0; }
+    .projects .item .ribbon-top-right::after {
+      bottom: 0;
+      right: 0; }
+    .projects .item .ribbon-top-right span {
+      left: -25px;
+      top: 30px;
+      transform: rotate(45deg); }
   .projects .container {
     position: relative; }
     .projects .container .img-overlay {
@@ -314,8 +356,9 @@ main {
     padding-right: 1.4rem; }
 
 @media screen and (min-width: 1171px) {
-  .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+  .main {
+    max-width: 1200px;
+    margin: 0 auto; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {

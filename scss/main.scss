@@ -55,7 +55,8 @@ main {
     padding: 4rem;
     // calc to create a sticky footer
     min-height: calc(100vh - 60px);
-    max-width: 1200px;
+    // max-width: 1200px;
+    // margin: 0 auto;
 
     &#home {
         overflow: hidden;
@@ -143,10 +144,21 @@ main {
     grid-gap: 0.8rem;
     grid-template-columns: repeat(3, 1fr);
 
-    img {
-        width: 100%;
-        border: 3px solid #fff;
+    .item {
+        margin-bottom: 2.3rem;
+
+        img {
+            width: 100%;
+            border: 3px solid #fff;
+
+        }
+
+        @include ribbon;
+
+
     }
+
+
 
     .container {
         position: relative;
