@@ -425,6 +425,8 @@ main {
   main {
     padding: 2rem;
     min-height: calc(100vh - 80px); }
+    main .lg-heading {
+      margin-top: 3rem; }
     main#home h1 {
       margin-top: 10vh;
       font-size: 4rem; }
@@ -434,7 +436,8 @@ main {
       position: relative;
       bottom: -9rem; }
   .menu-btn {
-    border: none; }
+    border: none;
+    right: 15px; }
   #projects .project-info {
     letter-spacing: normal;
     margin: 0.2rem 0.2rem 0 0;
