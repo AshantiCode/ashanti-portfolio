@@ -6,8 +6,9 @@
   top: 35px;
   cursor: pointer;
   transition: all .4s ease-out;
-  padding: 7px 7px 2px;
-  border: 2px solid #FFC040; }
+  border: 2px solid #FFC040;
+  border-radius: 50%;
+  padding: 15px 15px 10px; }
   .menu-btn .btn-line {
     width: 28px;
     height: 3px;
@@ -138,7 +139,7 @@ h3 {
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2rem;
-    padding: .2rem 2rem;
+    padding: 0.2rem 2rem;
     letter-spacing: 1px;
     background: rgba(42, 42, 42, 0.5); }
 
@@ -156,7 +157,8 @@ header {
 
 main {
   padding: 4rem;
-  min-height: calc(100vh - 60px); }
+  min-height: calc(100vh - 60px);
+  max-width: 1200px; }
   main#home {
     overflow: hidden; }
     main#home h1 {
@@ -170,11 +172,11 @@ main {
       cursor: pointer; }
     main#home .more-btn {
       margin-top: 4rem;
-      padding: .5rem 2rem;
+      padding: 0.5rem 2rem;
       font-size: 1.25rem;
       border: 2px solid #FFC040;
       border-radius: 4px;
-      transition: all .4s ease-in-out; }
+      transition: all 0.4s ease-in-out; }
       main#home .more-btn:hover {
         background: #FFC040;
         color: black; }
@@ -202,14 +204,14 @@ main {
     grid-area: col3; }
   .about-info .col {
     background: #323232;
-    padding: .5rem;
+    padding: 0.5rem;
     border-bottom: 5px solid #FFC040; }
   .about-info span {
     color: #FFC040; }
 
 .projects {
   display: grid;
-  grid-gap: .8rem;
+  grid-gap: 0.8rem;
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
@@ -225,7 +227,7 @@ main {
       height: 100%;
       width: 100%;
       opacity: 0;
-      transition: .5s ease;
+      transition: 0.5s ease;
       background-color: #252525;
       border: 3px solid #FFC040; }
       .projects .container .img-overlay:hover {
@@ -247,9 +249,9 @@ main {
     border: 1px solid #FFC040;
     border-radius: 20px;
     display: inline-block;
-    margin: 1rem .3rem 0 0;
-    padding: .3rem 1rem;
-    font-size: .9rem;
+    margin: 1rem 0.3rem 0 0;
+    padding: 0.3rem 1rem;
+    font-size: 0.9rem;
     letter-spacing: 1px; }
 
 .boxes {
@@ -274,9 +276,9 @@ main {
 
 .btn, .btn-dark, .btn-light {
   display: block;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border: 0;
-  margin-bottom: .3rem;
+  margin-bottom: 0.3rem;
   text-align: center; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #FFC040;

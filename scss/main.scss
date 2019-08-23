@@ -1,7 +1,6 @@
 @import 'config';
 @import 'menu';
 
-
 * {
     box-sizing: border-box;
 }
@@ -13,8 +12,7 @@ body {
     height: 100%;
     margin: 0;
     line-height: 1.5;
-    font-family: 'Montserrat',
-        sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 // Headings
@@ -32,14 +30,11 @@ h3 {
 
     &.sm-heading {
         margin-bottom: 2rem;
-        padding: .2rem 2rem;
+        padding: 0.2rem 2rem;
         letter-spacing: 1px;
-        background: rgba(lighten($primary-color, 2), .5);
+        background: rgba(lighten($primary-color, 2), 0.5);
     }
 }
-
-
-
 
 a {
     color: #fff;
@@ -60,8 +55,7 @@ main {
     padding: 4rem;
     // calc to create a sticky footer
     min-height: calc(100vh - 60px);
-
-
+    max-width: 1200px;
 
     &#home {
         overflow: hidden;
@@ -81,13 +75,12 @@ main {
 
         .more-btn {
             margin-top: 4rem;
-            padding: .5rem 2rem;
+            padding: 0.5rem 2rem;
             font-size: 1.25rem;
             // font-weight: 700;
             border: 2px solid $secondary-color;
             border-radius: 4px;
-            transition: all .4s ease-in-out;
-
+            transition: all 0.4s ease-in-out;
 
             &:hover {
                 background: $secondary-color;
@@ -95,10 +88,8 @@ main {
                 color: black;
             }
         }
-
     }
 }
-
 
 // About Page
 .about-info {
@@ -137,7 +128,7 @@ main {
 
     .col {
         background: lighten($primary-color, 5);
-        padding: .5rem;
+        padding: 0.5rem;
         border-bottom: 5px solid $secondary-color;
     }
 
@@ -149,7 +140,7 @@ main {
 // Project Page
 .projects {
     display: grid;
-    grid-gap: .8rem;
+    grid-gap: 0.8rem;
     grid-template-columns: repeat(3, 1fr);
 
     img {
@@ -169,7 +160,7 @@ main {
             height: 100%;
             width: 100%;
             opacity: 0;
-            transition: .5s ease;
+            transition: 0.5s ease;
             background-color: $primary-color;
             border: 3px solid $secondary-color;
 
@@ -198,9 +189,9 @@ main {
         border: 1px solid $secondary-color;
         border-radius: 20px;
         display: inline-block;
-        margin: 1rem .3rem 0 0;
-        padding: .3rem 1rem;
-        font-size: .9rem;
+        margin: 1rem 0.3rem 0 0;
+        padding: 0.3rem 1rem;
+        font-size: 0.9rem;
         letter-spacing: 1px;
     }
 }
@@ -231,19 +222,16 @@ main {
             }
         }
     }
-
 }
 
 // Project Info Styles
 
-
-
 // Button Styles
 .btn {
     display: block;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     border: 0;
-    margin-bottom: .3rem;
+    margin-bottom: 0.3rem;
     text-align: center;
 
     &:hover {
@@ -261,7 +249,6 @@ main {
         @extend .btn;
         background: lighten($primary-color, 50);
     }
-
 }
 
 .impressum {
@@ -300,22 +287,18 @@ main {
     a,
     div {
         color: grey;
-
     }
 
     .icons {
-
         .fa-2x {
             font-size: 1.5rem;
         }
 
         a {
             padding-right: 1.4rem;
-
         }
     }
 }
-
 
 // Media Queries at the bottom to run after normal CSS
 @import 'mobile';
