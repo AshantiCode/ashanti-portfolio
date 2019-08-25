@@ -2,17 +2,17 @@
 @import 'menu';
 
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-    @include background;
-    background: $primary-color;
-    color: set-text-color($primary-color);
-    height: 100%;
-    margin: 0;
-    line-height: 1.5;
-    font-family: 'Montserrat', sans-serif;
+	@include background;
+	background: $primary-color;
+	color: set-text-color($primary-color);
+	height: 100%;
+	margin: 0;
+	line-height: 1.5;
+	font-family: 'Montserrat', sans-serif;
 }
 
 // Headings
@@ -20,343 +20,317 @@ body {
 h1,
 h2,
 h3 {
-    margin: 0;
-    font-weight: 400;
+	margin: 0;
+	font-weight: 400;
 
-    &.lg-heading {
-        font-size: 6rem;
-        font-family: $heading-font;
-    }
+	&.lg-heading {
+		font-size: 6rem;
+		font-family: $heading-font;
+	}
 
-    &.sm-heading {
-        margin-bottom: 2rem;
-        padding: 0.2rem 2rem;
-        letter-spacing: 1px;
-        background: rgba(lighten($primary-color, 2), 0.5);
-    }
+	&.sm-heading {
+		margin-bottom: 2rem;
+		padding: 0.2rem 2rem;
+		letter-spacing: 1px;
+		background: rgba(lighten($primary-color, 2), 0.5);
+	}
 }
 
 a {
-    color: #fff;
-    text-decoration: none;
+	color: #fff;
+	text-decoration: none;
 }
 
 header {
-    position: fixed;
-    z-index: 2;
-    width: 100%;
+	position: fixed;
+	z-index: 2;
+	width: 100%;
 }
 
 .text-secondary {
-    color: $secondary-color;
+	color: $secondary-color;
 }
 
 main {
-    padding: 4rem;
-    // calc to create a sticky footer
-    min-height: calc(100vh - 60px);
-    // max-width: 1200px;
-    // margin: 0 auto;
+	padding: 4rem;
+	// calc to create a sticky footer
+	min-height: calc(100vh - 60px);
+	// max-width: 1200px;
+	// margin: 0 auto;
 
-    &#home {
-        overflow: hidden;
+	&#home {
+		overflow: hidden;
 
-        h1 {
-            margin-top: 20vh;
-        }
+		h1 {
+			margin-top: 20vh;
+		}
 
+		.icons {
+			.fa-2x {
+				font-size: 1.5rem;
+			}
 
+			a {
+				padding-right: 1.4rem;
+				color: #c5c4c1;
 
-        .icons {
-            .fa-2x {
-                font-size: 1.5rem;
-            }
+				&:hover {
+					color: $secondary-color;
+					@include easeOut;
+				}
+			}
+		}
 
-            a {
-                padding-right: 1.4rem;
-                color: #c5c4c1;
+		.btn-reset {
+			padding: 0;
+			border: none;
+			font: inherit;
+			color: inherit;
+			background-color: transparent;
+			cursor: pointer;
+		}
 
-                &:hover {
-                    color: $secondary-color;
-                    @include easeOut;
-                }
-            }
+		.more-btn {
+			margin-top: 4rem;
+			padding: 0.5rem 2rem;
+			font-size: 1.25rem;
+			// font-weight: 700;
+			background: $secondary-color;
+			color: #4a4646;
+			text-transform: uppercase;
+			font-weight: bold;
+			// border: 2px solid $secondary-color;
+			border-radius: 4px;
+			transition: all 0.4s ease-in-out;
 
-        }
-
-        .btn-reset {
-            padding: 0;
-            border: none;
-            font: inherit;
-            color: inherit;
-            background-color: transparent;
-            cursor: pointer;
-        }
-
-        .more-btn {
-            margin-top: 4rem;
-            padding: 0.5rem 2rem;
-            font-size: 1.25rem;
-            // font-weight: 700;
-            background: $secondary-color;
-            color: #4a4646;
-            text-transform: uppercase;
-            font-weight: bold;
-            // border: 2px solid $secondary-color;
-            border-radius: 4px;
-            transition: all 0.4s ease-in-out;
-
-            &:hover {
-                background: $primary-color;
-                opacity: .7; // font-weight: 700;
-                color: white;
-            }
-        }
-
-
-    }
+			&:hover {
+				background: $primary-color;
+				opacity: 0.7; // font-weight: 700;
+				color: white;
+			}
+		}
+	}
 }
 
 // About Page
 .about-info {
-    display: grid;
-    grid-gap: 30px;
-    grid-template-areas:
-        'bioimage bio bio'
-        'col1 col2 col3';
-    grid-template-columns: repeat(3, 1fr);
+	display: grid;
+	grid-gap: 30px;
+	grid-template-areas:
+		'bioimage bio bio'
+		'col1 col2 col3';
+	grid-template-columns: repeat(3, 1fr);
 
-    .bio-image {
-        grid-area: bioimage;
-        margin: auto;
-        width: 280px;
-        height: 280px;
-        border-radius: 50%;
-        border: 3px solid $secondary-color;
-    }
+	.bio-image {
+		grid-area: bioimage;
+		margin: auto;
+		width: 280px;
+		height: 280px;
+		border-radius: 50%;
+		border: 3px solid $secondary-color;
+	}
 
-    .bio {
-        grid-area: bio;
-        font-size: 1.5rem;
-    }
+	.bio {
+		grid-area: bio;
+		font-size: 1.5rem;
+	}
 
-    .col-1 {
-        grid-area: col1;
-    }
+	.col-1 {
+		grid-area: col1;
+	}
 
-    .col-2 {
-        grid-area: col2;
-    }
+	.col-2 {
+		grid-area: col2;
+	}
 
-    .col-3 {
-        grid-area: col3;
-    }
+	.col-3 {
+		grid-area: col3;
+	}
 
-    .col {
-        background: lighten($primary-color, 5);
-        padding: 0.5rem;
-        border-bottom: 5px solid $secondary-color;
-    }
+	.col {
+		background: lighten($primary-color, 5);
+		padding: 0.5rem;
+		border-bottom: 5px solid $secondary-color;
+	}
 
-    span {
-        color: $secondary-color;
-    }
+	span {
+		color: $secondary-color;
+	}
 }
 
 // Project Page
 .projects {
-    display: grid;
-    grid-gap: 0.8rem;
-    grid-template-columns: repeat(3, 1fr);
+	display: grid;
+	grid-gap: 0.8rem;
+	grid-template-columns: repeat(3, 1fr);
 
-    .item {
-        margin-bottom: 2.3rem;
+	.item {
+		margin-bottom: 2.3rem;
 
-        img {
-            width: 100%;
-            border: 3px solid #fff;
+		img {
+			width: 100%;
+			border: 3px solid #fff;
+		}
 
-        }
+		@include ribbon;
+	}
 
-        @include ribbon;
+	.container {
+		position: relative;
 
+		.img-overlay {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 100%;
+			width: 100%;
+			opacity: 0;
+			transition: 0.5s ease;
+			background-color: $primary-color;
+			border: 3px solid $secondary-color;
 
-    }
+			&:hover {
+				opacity: 1;
+				border-color: $secondary-color;
+				@include easeOut;
+			}
+		}
 
+		.text {
+			width: 90%;
+			color: white;
+			font-size: 18px;
+			position: absolute;
+			top: 53%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			text-align: center;
+		}
+	}
 
-
-    .container {
-        position: relative;
-
-        .img-overlay {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 100%;
-            width: 100%;
-            opacity: 0;
-            transition: 0.5s ease;
-            background-color: $primary-color;
-            border: 3px solid $secondary-color;
-
-            &:hover {
-                opacity: 1;
-                border-color: $secondary-color;
-                @include easeOut;
-            }
-        }
-
-        .text {
-            width: 90%;
-            color: white;
-            font-size: 18px;
-            position: absolute;
-            top: 53%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            text-align: center;
-        }
-    }
-
-    .project-info {
-        border: 1px solid $secondary-color;
-        border-radius: 20px;
-        display: inline-block;
-        margin: 1rem 0.3rem 0 0;
-        padding: 0.3rem 1rem;
-        font-size: 0.9rem;
-        letter-spacing: 1px;
-    }
+	.project-info {
+		border: 1px solid $secondary-color;
+		border-radius: 20px;
+		display: inline-block;
+		margin: 1rem 0.3rem 0 0;
+		padding: 0.3rem 1rem;
+		font-size: 0.9rem;
+		letter-spacing: 1px;
+	}
 }
 
 // Contact Page
 .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 1rem;
 
-    div {
-        font-size: 2rem;
-        border: 1px solid#fff;
-        border-radius: 4px;
-        padding: 1.5rem 2.5rem;
-        margin-bottom: 3rem;
-        @include easeOut;
+	div {
+		font-size: 2rem;
+		border: 1px solid#fff;
+		border-radius: 4px;
+		padding: 1.5rem 2.5rem;
+		margin-bottom: 3rem;
+		@include easeOut;
 
-        &:hover {
-            border-color: $secondary-color;
-            background: $secondary-color;
-            color: set-text-color($secondary-color);
+		&:hover {
+			border-color: $secondary-color;
+			background: $secondary-color;
+			color: set-text-color($secondary-color);
 
-            span {
-                color: set-text-color($secondary-color);
-            }
-        }
-    }
+			span {
+				color: set-text-color($secondary-color);
+			}
+		}
+	}
 }
-
-
 
 // Button Styles
 .btn {
-    display: block;
-    padding: 0.5rem 1rem;
-    border: 0;
-    margin-bottom: 0.3rem;
-    text-align: center;
+	display: block;
+	padding: 0.5rem 1rem;
+	border: 0;
+	margin-bottom: 0.3rem;
+	text-align: center;
 
+	&:hover {
+		background: $secondary-color;
+		color: set-text-color($secondary-color);
+	}
 
-    &:hover {
-        background: $secondary-color;
-        color: set-text-color($secondary-color);
-    }
+	&-dark {
+		@extend.btn;
+		background: darken($primary-color, 50);
+		color: #fff;
+	}
 
-    &-dark {
-        @extend.btn;
-        background: darken($primary-color, 50);
-        color: #fff;
-    }
+	&-light {
+		@extend .btn;
+		background: lighten($primary-color, 50);
+	}
 
-    &-light {
-        @extend .btn;
-        background: lighten($primary-color, 50);
+	&-disabled {
+		@extend .btn;
+		background: transparent;
 
-    }
+		.fa-github {
+			color: transparent;
+		}
 
-    &-disabled {
-        @extend .btn;
-        background: transparent;
-
-        .fa-github {
-            color: transparent;
-
-        }
-
-        &:hover {
-            background: transparent;
-            cursor: default
-        }
-
-    }
-
-}
-
-.no-cursor {
-    cursor: default;
-
-    &:hover {
-        background: lighten($primary-color, 50);
-        color: white;
-    }
+		&:hover {
+			background: transparent;
+			cursor: default;
+		}
+	}
 }
 
 // Impresseum Page
 
 .content {
-    margin: 2rem;
+	margin: 2rem;
 
-    .heading {
-        color: $secondary-color;
-    }
+	.heading {
+		color: $secondary-color;
+	}
 }
 
 //  Sticky Footer , calc function on main
 #main-footer {
-    height: 60px;
-    padding: 1.25rem 4rem 0;
-    display: flex;
-    justify-content: space-between;
-    background: black;
+	height: 60px;
+	padding: 1.25rem 4rem 0;
+	display: flex;
+	justify-content: space-between;
+	background: black;
 
-    a {
-        cursor: pointer;
+	a {
+		cursor: pointer;
 
-        &:hover {
-            color: $secondary-color;
-            @include easeOut;
-        }
-    }
+		&:hover {
+			color: $secondary-color;
+			@include easeOut;
+		}
+	}
 
-    a,
-    div {
-        color: grey;
-    }
+	a,
+	div {
+		color: grey;
+	}
 
-    .icons {
-        .fa-2x {
-            font-size: 1.5rem;
-        }
+	.icons {
+		.fa-2x {
+			font-size: 1.5rem;
+		}
 
-        a {
-            padding-right: 1.4rem;
-        }
-    }
+		a {
+			padding-right: 1.4rem;
+		}
+	}
 }
 
 // Media Queries at the bottom to run after normal CSS

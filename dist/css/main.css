@@ -191,7 +191,7 @@ main {
       transition: all 0.4s ease-in-out; }
       main#home .more-btn:hover {
         background: #252525;
-        opacity: .7;
+        opacity: 0.7;
         color: white; }
 
 .about-info {
@@ -349,12 +349,6 @@ main {
     .btn-disabled:hover {
       background: transparent;
       cursor: default; }
-
-.no-cursor {
-  cursor: default; }
-  .no-cursor:hover {
-    background: #a5a5a5;
-    color: white; }
 
 .content {
   margin: 2rem; }
