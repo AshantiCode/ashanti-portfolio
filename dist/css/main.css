@@ -328,13 +328,13 @@ main {
       .boxes div:hover span {
         color: #000; }
 
-.btn, .btn-dark, .btn-light {
+.btn, .btn-dark, .btn-light, .btn-disabled {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
   text-align: center; }
-  .btn:hover, .btn-dark:hover, .btn-light:hover {
+  .btn:hover, .btn-dark:hover, .btn-light:hover, .btn-disabled:hover {
     background: #FFC040;
     color: #000; }
   .btn-dark {
@@ -342,6 +342,19 @@ main {
     color: #fff; }
   .btn-light {
     background: #a5a5a5; }
+  .btn-disabled {
+    background: transparent; }
+    .btn-disabled .fa-github {
+      color: transparent; }
+    .btn-disabled:hover {
+      background: transparent;
+      cursor: default; }
+
+.no-cursor {
+  cursor: default; }
+  .no-cursor:hover {
+    background: #a5a5a5;
+    color: white; }
 
 .content {
   margin: 2rem; }

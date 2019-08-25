@@ -271,6 +271,7 @@ main {
     margin-bottom: 0.3rem;
     text-align: center;
 
+
     &:hover {
         background: $secondary-color;
         color: set-text-color($secondary-color);
@@ -285,12 +286,38 @@ main {
     &-light {
         @extend .btn;
         background: lighten($primary-color, 50);
+
+    }
+
+    &-disabled {
+        @extend .btn;
+        background: transparent;
+
+        .fa-github {
+            color: transparent;
+
+        }
+
+        &:hover {
+            background: transparent;
+            cursor: default
+        }
+
+    }
+
+}
+
+.no-cursor {
+    cursor: default;
+
+    &:hover {
+        background: lighten($primary-color, 50);
+        color: white;
     }
 }
 
-
-
 // Impresseum Page
+
 .content {
     margin: 2rem;
 
