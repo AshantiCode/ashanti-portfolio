@@ -32,7 +32,9 @@ h3 {
 		margin-bottom: 2rem;
 		padding: 0.2rem 2rem;
 		letter-spacing: 1px;
-		background: rgba(lighten($primary-color, 2), 0.5);
+		// background: rgba(lighten($primary-color, 2), 0.5);
+		background: linear-gradient(270deg, transparent 0, rgba(0, 0, 0, .9) 100%, rgba(0, 0, 0, .65) 0) // background: linear-gradient(610deg, transparent 0, rgba(255, 192, 64, .4) 100%, rgba(255, 192, 64, 0.65) 0);
+
 	}
 }
 
@@ -53,16 +55,18 @@ header {
 
 main {
 	padding: 4rem;
-	// calc to create a sticky footer
 	min-height: calc(100vh - 60px);
-	// max-width: 1200px;
-	// margin: 0 auto;
+
 
 	&#home {
 		overflow: hidden;
 
+		.pre-heading {
+			margin-top: 13vh;
+		}
+
 		h1 {
-			margin-top: 20vh;
+			// margin-top: 20vh;
 		}
 
 		.icons {
