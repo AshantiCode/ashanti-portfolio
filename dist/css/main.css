@@ -166,7 +166,7 @@ main {
       margin-top: 13vh; }
     main#home .icons .fa-2x {
       font-size: 1.5rem;
-      transition: transform .2s ease-in-out; }
+      transition: transform 0.2s ease-in-out; }
       main#home .icons .fa-2x:hover {
         transform: scale(1.4); }
     main#home .icons a {
@@ -234,45 +234,6 @@ main {
     .projects .item img {
       width: 100%;
       border: 3px solid #fff; }
-    .projects .item .ribbon {
-      width: 133px;
-      height: 150px;
-      overflow: hidden;
-      position: absolute; }
-    .projects .item .ribbon::before,
-    .projects .item .ribbon::after {
-      position: absolute;
-      z-index: -1;
-      content: '';
-      display: block; }
-    .projects .item .ribbon span {
-      position: absolute;
-      display: block;
-      width: 225px;
-      font-size: 10px;
-      padding: 10px 0;
-      background-color: rgba(255, 192, 64, 0.7);
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-      color: #252525;
-      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-      text-align: center; }
-    .projects .item .ribbon-top-right {
-      top: -2px;
-      right: -3px; }
-    .projects .item .ribbon-top-right::before,
-    .projects .item .ribbon-top-right::after {
-      border-top-color: transparent;
-      border-right-color: transparent; }
-    .projects .item .ribbon-top-right::before {
-      top: 0;
-      left: 0; }
-    .projects .item .ribbon-top-right::after {
-      bottom: 0;
-      right: 0; }
-    .projects .item .ribbon-top-right span {
-      left: -25px;
-      top: 30px;
-      transform: rotate(45deg); }
   .projects .container {
     position: relative; }
     .projects .container .img-overlay {
