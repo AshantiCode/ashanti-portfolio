@@ -96,12 +96,10 @@ main {
 			margin-top: 4rem;
 			padding: 0.5rem 2rem;
 			font-size: 1.25rem;
-			// font-weight: 700;
 			background: $secondary-color;
 			color: #4a4646;
 			text-transform: uppercase;
 			font-weight: bold;
-			// border: 2px solid $secondary-color;
 			border-radius: 4px;
 			transition: all 0.4s ease-in-out;
 
@@ -277,6 +275,22 @@ main {
 
 	&-disabled {
 		@extend .btn;
+		background: #c3bfbf;
+		color: grey;
+
+		.fa-github {
+			color: transparent;
+		}
+
+		&:hover {
+			background: #c3bfbf;
+			color: grey;
+			cursor: default;
+		}
+	}
+
+	&-removed {
+		@extend .btn;
 		background: transparent;
 
 		.fa-github {
@@ -285,6 +299,7 @@ main {
 
 		&:hover {
 			background: transparent;
+			color: grey;
 			cursor: default;
 		}
 	}

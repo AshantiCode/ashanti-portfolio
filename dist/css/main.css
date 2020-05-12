@@ -5,8 +5,8 @@
   right: 35px;
   top: 35px;
   cursor: pointer;
-  transition: all .4s ease-out;
-  border: 3px solid #FFC040;
+  transition: all 0.4s ease-out;
+  border: 3px solid #ffc040;
   border-radius: 50%;
   padding: 15px 15px 10px; }
   .menu-btn .btn-line {
@@ -14,7 +14,7 @@
     height: 3px;
     margin: 0 0 5px 0;
     background: #ebebeb;
-    transition: all .4s ease-out; }
+    transition: all 0.4s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
     .menu-btn.close .btn-line:nth-child(1) {
@@ -46,19 +46,19 @@
     background: #181818;
     list-style: none;
     transform: translate3d(0, -100%, 0);
-    transition: all .4s ease-out; }
+    transition: all 0.4s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
     background: #252525;
     transform: translate3d(0, 100%, 0);
-    transition: all .4s ease-out; }
+    transition: all 0.4s ease-out; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .greeting,
     .menu-branding .name {
       font-size: 1.875rem;
-      color: #FFC040;
+      color: #ffc040;
       text-transform: uppercase; }
     .menu-branding .name {
       letter-spacing: 4px; }
@@ -68,14 +68,14 @@
       background: url(../img/profile-pic-500.jpg) no-repeat center;
       background-size: contain;
       border-radius: 50%;
-      border: 3px solid #FFC040; }
+      border: 3px solid #ffc040; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
-    transition: all .4s ease-out; }
+    transition: all 0.4s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #FFC040; }
+      color: #ffc040; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -84,9 +84,9 @@
     padding: 1rem 0;
     font-weight: 400;
     color: #ebebeb;
-    transition: all .4s ease-out; }
+    transition: all 0.4s ease-out; }
     .menu .nav-link:hover {
-      color: #FFC040; }
+      color: #ffc040; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -118,7 +118,7 @@ body {
     background-attachment: fixed;
     background-size: cover; }
     body#bg-image:after {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       right: 0;
@@ -155,7 +155,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #FFC040; }
+  color: #ffc040; }
 
 main {
   padding: 4rem;
@@ -173,8 +173,8 @@ main {
       padding-right: 1.4rem;
       color: #c5c4c1; }
       main#home .icons a:hover {
-        color: #FFC040;
-        transition: all .4s ease-out; }
+        color: #ffc040;
+        transition: all 0.4s ease-out; }
     main#home .btn-reset {
       padding: 0;
       border: none;
@@ -186,7 +186,7 @@ main {
       margin-top: 4rem;
       padding: 0.5rem 2rem;
       font-size: 1.25rem;
-      background: #FFC040;
+      background: #ffc040;
       color: #4a4646;
       text-transform: uppercase;
       font-weight: bold;
@@ -208,7 +208,7 @@ main {
     width: 280px;
     height: 280px;
     border-radius: 50%;
-    border: 3px solid #FFC040; }
+    border: 3px solid #ffc040; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -221,9 +221,9 @@ main {
   .about-info .col {
     background: #323232;
     padding: 0.5rem;
-    border-bottom: 5px solid #FFC040; }
+    border-bottom: 5px solid #ffc040; }
   .about-info span {
-    color: #FFC040; }
+    color: #ffc040; }
 
 .projects {
   display: grid;
@@ -247,11 +247,11 @@ main {
       opacity: 0;
       transition: 0.5s ease;
       background-color: #252525;
-      border: 3px solid #FFC040; }
+      border: 3px solid #ffc040; }
       .projects .container .img-overlay:hover {
         opacity: 1;
-        border-color: #FFC040;
-        transition: all .4s ease-out; }
+        border-color: #ffc040;
+        transition: all 0.4s ease-out; }
     .projects .container .text {
       width: 90%;
       color: white;
@@ -264,7 +264,7 @@ main {
       transform: translate(-50%, -50%);
       text-align: center; }
   .projects .project-info {
-    border: 1px solid #FFC040;
+    border: 1px solid #ffc040;
     border-radius: 20px;
     display: inline-block;
     margin: 1rem 0.3rem 0 0;
@@ -284,22 +284,22 @@ main {
     border-radius: 4px;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
-    transition: all .4s ease-out; }
+    transition: all 0.4s ease-out; }
     .boxes div:hover {
-      border-color: #FFC040;
-      background: #FFC040;
+      border-color: #ffc040;
+      background: #ffc040;
       color: #000; }
       .boxes div:hover span {
         color: #000; }
 
-.btn, .btn-dark, .btn-light, .btn-disabled {
+.btn, .btn-dark, .btn-light, .btn-disabled, .btn-removed {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
   text-align: center; }
-  .btn:hover, .btn-dark:hover, .btn-light:hover, .btn-disabled:hover {
-    background: #FFC040;
+  .btn:hover, .btn-dark:hover, .btn-light:hover, .btn-disabled:hover, .btn-removed:hover {
+    background: #ffc040;
     color: #000; }
   .btn-dark {
     background: black;
@@ -307,17 +307,27 @@ main {
   .btn-light {
     background: #a5a5a5; }
   .btn-disabled {
-    background: transparent; }
+    background: #c3bfbf;
+    color: grey; }
     .btn-disabled .fa-github {
       color: transparent; }
     .btn-disabled:hover {
+      background: #c3bfbf;
+      color: grey;
+      cursor: default; }
+  .btn-removed {
+    background: transparent; }
+    .btn-removed .fa-github {
+      color: transparent; }
+    .btn-removed:hover {
       background: transparent;
+      color: grey;
       cursor: default; }
 
 .content {
   margin: 2rem; }
   .content .heading {
-    color: #FFC040; }
+    color: #ffc040; }
 
 #main-footer {
   height: 60px;
@@ -328,8 +338,8 @@ main {
   #main-footer a {
     cursor: pointer; }
     #main-footer a:hover {
-      color: #FFC040;
-      transition: all .4s ease-out; }
+      color: #ffc040;
+      transition: all 0.4s ease-out; }
   #main-footer a,
   #main-footer div {
     color: grey; }
