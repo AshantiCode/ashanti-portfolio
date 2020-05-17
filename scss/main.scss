@@ -166,6 +166,7 @@ main {
 
 	.item {
 		margin-bottom: 2.3rem;
+		margin-top: 3rem;
 
 		img {
 			width: 100%;
@@ -193,6 +194,8 @@ main {
 				opacity: 1;
 				border-color: $secondary-color;
 				@include easeOut;
+				cursor: pointer;
+				;
 			}
 		}
 
