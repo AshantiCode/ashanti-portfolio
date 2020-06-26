@@ -132,7 +132,11 @@ main {
 
 	.bio {
 		grid-area: bio;
-		font-size: 1.5rem;
+		font-size: 1.2rem;
+	}
+
+	.backend-icon {
+		padding: 0 .5rem;
 	}
 
 	.col-1 {
@@ -151,6 +155,7 @@ main {
 		background: lighten($primary-color, 5);
 		padding: 0.5rem;
 		border-bottom: 5px solid $secondary-color;
+		max-width: 600px;
 	}
 
 	span {

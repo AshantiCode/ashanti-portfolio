@@ -211,7 +211,9 @@ main {
     border: 3px solid #ffc040; }
   .about-info .bio {
     grid-area: bio;
-    font-size: 1.5rem; }
+    font-size: 1.2rem; }
+  .about-info .backend-icon {
+    padding: 0 .5rem; }
   .about-info .col-1 {
     grid-area: col1; }
   .about-info .col-2 {
@@ -221,7 +223,8 @@ main {
   .about-info .col {
     background: #323232;
     padding: 0.5rem;
-    border-bottom: 5px solid #ffc040; }
+    border-bottom: 5px solid #ffc040;
+    max-width: 600px; }
   .about-info span {
     color: #ffc040; }
 
@@ -358,7 +361,10 @@ main {
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .about-info {
+    grid-template-areas: 'bioimage' 'bio' 'col1' 'col2' 'col3';
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 768px) {
   main {
