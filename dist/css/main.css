@@ -213,7 +213,11 @@ main {
     grid-area: bio;
     font-size: 1.2rem; }
   .about-info .backend-icon {
-    padding: 0 .5rem; }
+    margin-right: 10px; }
+  .about-info img {
+    width: 80px; }
+  .about-info img.rest-api {
+    width: 120px; }
   .about-info .col-1 {
     grid-area: col1; }
   .about-info .col-2 {

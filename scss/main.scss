@@ -136,7 +136,16 @@ main {
 	}
 
 	.backend-icon {
-		padding: 0 .5rem;
+		// padding: 0 .5rem;
+		margin-right: 10px;
+	}
+
+	img {
+		width: 80px;
+	}
+
+	img.rest-api {
+		width: 120px;
 	}
 
 	.col-1 {
