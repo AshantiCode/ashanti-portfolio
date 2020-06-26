@@ -15,6 +15,18 @@
 	.projects {
 		grid-template-columns: repeat(2, 1fr);
 	}
+
+	.about-info {
+		grid-template-areas:
+			'bioimage'
+			'bio'
+			'col1'
+			'col2'
+			'col3';
+		grid-template-columns: 1fr;
+	}
+
+
 }
 
 //  Tablets & Small Laptops
